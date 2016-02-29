@@ -1,0 +1,109 @@
+.tasks-section {
+	display: flex;
+	justify-content: space-around;
+}
+
+.tasks-section > div {
+	width: 400px;
+	float: left;
+	margin: 20px;
+	background-color: white;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	box-shadow: 0 -3px 0 0 #ddd; 
+}
+
+.tasks-section > div > p {
+	padding: 15px 0 0 15px;
+	font-weight: bold;
+}
+
+.tasks-list ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+
+.tasks-list ul li {
+	width: 100%;
+	padding: 10px;
+	display: table;
+}
+
+.tasks-list ul li:hover, .selected {
+	background-color: #eee;
+}
+
+.tasks-list ul li div.task-image {
+	display: table-cell;
+	width: 60px;
+	height: 60px;
+	background-image: url('../resources/images/task.png');
+}
+
+.tasks-list ul li p {
+	display: table-cell;
+	vertical-align: top;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.task-name {
+	width: 70%;
+	float: left;
+	font-weight: bold;
+}
+
+.task-date {
+	float: right;
+}
+
+.clear-both {
+	clear: both;
+}
+
+.task-attr-image {
+	float: left;
+	margin: 15px;
+}
+
+.task-attr-key {
+	float: left;
+	margin: 15px;
+}
+
+.task-attr-value {
+	float: left;
+	font-weight: bold;
+	margin: 15px;
+	width: 50%;
+}
+
+.task-attr-divider {
+	clear: both;
+	margin: 0;
+}
+
+.light-grey-back {
+	background-color: #eee;
+}
+
+.task-description {
+	padding: 15px;
+}
+
+.task-description footer {
+	display: flex;
+}
+
+.task-description footer button {
+	margin: auto;
+	margin-top: 20px;
+	background-color: green;
+	color: white;
+
+}
+
+/** {
+	border: 1px solid black;
+}*/

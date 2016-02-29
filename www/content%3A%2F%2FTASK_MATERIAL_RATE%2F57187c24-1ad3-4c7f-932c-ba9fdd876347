@@ -1,0 +1,1 @@
+{"planRate":200,"actualRate":212.42999267578125,"um":{"description":"system volume","name":"l","umType":{"systemUmCode":"l","type":"VOLUME","uri":"content://MEASURE_UNIT_TYPE/5"},"code":"l","uri":"content://MEASURE_UNIT/364511"},"uri":"content://TASK_MATERIAL_RATE/57187c24-1ad3-4c7f-932c-ba9fdd876347"}

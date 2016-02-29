@@ -1,12 +1,44 @@
 <!DOCTYPE html>
-<html ng-app="eFarmTestApp">
+<html ng-app="eFarmTestApp" class="light-grey-back">
 <head>
+	<meta charset="utf-8" />
 	<title>Task page</title>
-	<script src="angular/angular.js"></script>
+	<link rel="stylesheet" href="css/index.css" />
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+	<script src="angular/angular.min.js"></script>
+	<!-- <script src="angular/angular-route.min.js"></script> -->
 	<script src="app.js"></script>
 </head>
-<body>
-	<div class="tasks"></div>
-	<div class="task_description"></div>
+<body class="light-grey-back">
+	<section ng-controller="TasksCtrl" class="tasks-section container">
+		<div class="tasks-list">
+			<p>Your tasks</p>
+			<ul>
+			  <li ng-repeat="task in tasks" ng-click="tasks.curTask = tasks[$index]; console.log($index); tasks.diselectAll(); task.selected = true" class="{{task.selected?'selected':'';}}">
+			    <div class="task-image"></div>
+			  	<p>My Task 0{{$index+1}}</p>
+			  </li>
+			</ul>
+		</div>
+		<div class="task-description">
+			<header>
+				<p class="task-name">Spraying: Insecticide input on some particular fields</p>
+				<p class="task-date">{{tasks.curTask.date}}</p>
+				<div class="clear-both"></div>
+			</header>
+			<main>
+				<img ng-repeat-start="attr in tasks.curTask.attrs" class="task-attr-image" src="{{attr.img}}" />
+				<div class="task-attr-key">{{attr.key}}</div>
+				<div class="task-attr-value">{{attr.value}}</div>
+				<hr ng-repeat-end class="task-attr-divider" />
+				<div class="task-attr-key">Notes:</div>
+				<div class="task-attr-value">Please do the spraying on Top field today</div>
+				<hr class="task-attr-divider" />
+			</main>
+			<footer>
+				<button class="btn">Add task to eFarm Pilot</button>
+			</footer>
+		</div>
+	</section>
 </body>
 </html>

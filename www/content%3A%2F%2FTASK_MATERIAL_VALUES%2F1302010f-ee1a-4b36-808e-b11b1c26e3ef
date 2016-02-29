@@ -1,0 +1,1 @@
+{"plan":153.1509,"actual":160.72421,"um":{"description":"system weight","name":"kg","umType":{"systemUmCode":"kg","type":"WEIGHT","uri":"content://MEASURE_UNIT_TYPE/4"},"code":"kg","uri":"content://MEASURE_UNIT/364451"},"uri":"content://TASK_MATERIAL_VALUES/1302010f-ee1a-4b36-808e-b11b1c26e3ef"}
