@@ -9,13 +9,13 @@ var app = angular.module('eFarmTestApp', []); /*['ngRoute']).
 app.controller('TasksCtrl', function($scope, $http) {
 	var base_url = 'http://localhost:8080/RESTService/RESTService/preview/document?uri=';
 	$scope.taskUrls = [    
-		'http://localhost:8080/RESTService/RESTService/preview/document?uri=content://TRACK/d3ababca-4ad0-43c2-aef4-31f723d22b0b',
-	    'http://localhost:8080/RESTService/RESTService/preview/document?uri=content://TRACK/d74a42f4-dea7-4b08-a6ac-814738d6d9fc',
-	    'http://localhost:8080/RESTService/RESTService/preview/document?uri=content://TRACK/f0903ea1-a4ef-4709-a910-44d5206a864e',
-	    'http://localhost:8080/RESTService/RESTService/preview/document?uri=content://TRACK/e653f518-af71-4e8a-84d0-c26208543e25',
-	    'http://localhost:8080/RESTService/RESTService/preview/document?uri=content://TRACK/8fe5d598-7ebc-47a7-ac8e-3eee86397c3d',
-	    'http://localhost:8080/RESTService/RESTService/preview/document?uri=content://TRACK/7f10fce2-18cb-4e5d-a9b4-ff99a334bbd4',
-	    'http://localhost:8080/RESTService/RESTService/preview/document?uri=content://TRACK/810a37ea-d390-4539-b261-1106c2cc7579'];
+		'http://http://dev.efarmer.mobi:8080/RESTService/RESTService/preview/document?uri=content://TRACK/d3ababca-4ad0-43c2-aef4-31f723d22b0b',
+	    'http://http://dev.efarmer.mobi:8080/RESTService/RESTService/preview/document?uri=content://TRACK/d74a42f4-dea7-4b08-a6ac-814738d6d9fc',
+	    'http://http://dev.efarmer.mobi:8080/RESTService/RESTService/preview/document?uri=content://TRACK/f0903ea1-a4ef-4709-a910-44d5206a864e',
+	    'http://http://dev.efarmer.mobi:8080/RESTService/RESTService/preview/document?uri=content://TRACK/e653f518-af71-4e8a-84d0-c26208543e25',
+	    'http://http://dev.efarmer.mobi:8080/RESTService/RESTService/preview/document?uri=content://TRACK/8fe5d598-7ebc-47a7-ac8e-3eee86397c3d',
+	    'http://http://dev.efarmer.mobi:8080/RESTService/RESTService/preview/document?uri=content://TRACK/7f10fce2-18cb-4e5d-a9b4-ff99a334bbd4',
+	    'http://http://dev.efarmer.mobi:8080/RESTService/RESTService/preview/document?uri=content://TRACK/810a37ea-d390-4539-b261-1106c2cc7579'];
 
 	$scope.tasks = [];
 	$scope.tasks.diselectAll = function() {
